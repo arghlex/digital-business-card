@@ -9,10 +9,10 @@
     position: relative;
 }
 .card--img img {
-    width: 250%;
+    width: 210%;
     position: absolute;
-    top: -50%;
-    left: -270px;
+    top: -41%;
+    left: -219px;
 }
 .card--content {
     background: #1a1b21;
@@ -21,10 +21,9 @@
     line-height: 1.4
 }
 
-
-
 .card--content h2 {
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .card--name {
@@ -47,15 +46,53 @@
     text-decoration: none;
 }
 
-.card--contact {}
+.card--contact {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.card--contact li {
+    margin: 0;
+    padding: 0;
+}
+.card--contact a {
+    display: inline-block;
+    width: 105px;
+    padding: 9px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
 
-.contact--email {}
+.contact--email {
+    color: #374151;
+    background: #fff;
+}
 
-.contact--linkedin {}
+.contact--linkedin {
+    color: #fff;
+    background: #5093E2
+}
 
 
 .card--footer {
     background: #161619;
     padding: 16px;
     border-radius: 0 0 10px 10px;
+}
+
+.card--footer ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--footer a {
+    color: #918E9B;
+    font-size: 34px;
 }

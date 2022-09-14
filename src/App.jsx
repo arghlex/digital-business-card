@@ -15,12 +15,12 @@ function App() {
             <div className="card--content">
                 
                 <h1 className="card--name">Laura Smith</h1>
-                <div className="card--role">Frontend Developer</div>
-                <div className="card--website"><a href="#">laurasmith.website</a></div>
+                <p className="card--role">Frontend Developer</p>
+                <p className="card--website"><a href="#">laurasmith.website</a></p>
 
                 <ul className="card--contact">
-                    <li><a className="contact--email" href="">Email</a></li>
-                    <li><a className="contact--linkedin" href="">LinkedIn</a></li>
+                    <li><a className="contact--email" href="#"><i className="fa-solid fa-envelope"></i> Email</a></li>
+                    <li><a className="contact--linkedin" href="#"><i className="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
 
                 <h2>About</h2>
@@ -33,10 +33,10 @@ function App() {
 
             <div className="card--footer">
                 <ul>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>GitHub</li>
+                    <li><a href="#" title="Twitter"><i className="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#" title="Facebook"><i className="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#" title="Instagram"><i className="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#" title="GitHub"><i className="fa-brands fa-square-github"></i></a></li>
                 </ul>
             </div>
 
