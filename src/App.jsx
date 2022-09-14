@@ -1,33 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from "react"
 import './App.css'
+import userImage from "./assets/user.jpg"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <main>
+
+        <div className="card">
+
+            <div className="card--img">
+                <img src={userImage} />
+            </div>
+
+            <div className="card--content">
+                
+                <h1 className="card--name">Laura Smith</h1>
+                <div className="card--role">Frontend Developer</div>
+                <div className="card--website"><a href="#">laurasmith.website</a></div>
+
+                <ul className="card--contact">
+                    <li><a className="contact--email" href="">Email</a></li>
+                    <li><a className="contact--linkedin" href="">LinkedIn</a></li>
+                </ul>
+
+                <h2>About</h2>
+                <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+
+                <h2>Interests</h2>
+                <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
+                
+            </div>
+
+            <div className="card--footer">
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
   )
 }
 
