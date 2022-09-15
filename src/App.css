@@ -1,5 +1,9 @@
 .card {
     width: 317px;
+    margin: 2rem auto;
+    background: #1a1b21;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
 }
 .card--img {
     width: 317px;
@@ -14,11 +18,12 @@
     top: -41%;
     left: -219px;
 }
+
 .card--content {
     background: #1a1b21;
-    padding: 24px 36px;
     font-size: 10px;
-    line-height: 1.4
+    line-height: 1.4;
+    padding: 0 36px;
 }
 
 .card--content h2 {
@@ -28,7 +33,7 @@
 
 .card--name {
     font-size: 25px;
-    margin: 0;
+    margin: 24px 0 0;
     text-align: center;
 }
 
@@ -36,6 +41,7 @@
     text-align: center;
     font-size: 12px;
     color: #f3bf99;
+    margin-bottom:8px;
 }
 
 .card--website {
@@ -83,6 +89,7 @@
     background: #161619;
     padding: 16px;
     border-radius: 0 0 10px 10px;
+    margin-top: 40px;
 }
 
 .card--footer ul {
